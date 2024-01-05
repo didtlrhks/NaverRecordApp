@@ -36,7 +36,10 @@ private struct OnboardingContentView: View {
             //온보딩 셀리스트뷰
             OnboardingCellListView(onboardingViewModel: onboardingViewModel)
             // 시작 버튼뷰
+            Spacer()
+            StartBtnView()
         }
+        .edgesIgnoringSafeArea(.top)
     }
 }
 //MARK : - 온보딩 셀 리스트 뷰
@@ -64,8 +67,8 @@ private struct OnboardingCellListView : View{
         .frame(width: UIScreen.main.bounds.width,height: UIScreen.main.bounds.height / 1.5)
         .background(
         selectedIndex % 2 == 0
-        ? Color.green
-        : Color.white
+        ? Color.customSky
+        : Color.customCoolGray
         
         )
         .clipped()
@@ -82,7 +85,7 @@ private struct OnboardingCellView : View{
     
     fileprivate var body: some View{
         VStack{
-            Image("Todo")
+            Image(onboardingContent.imageFileName)
                 .resizable()
                 .scaledToFit()
             
@@ -109,6 +112,27 @@ private struct OnboardingCellView : View{
             .cornerRadius(0)
         }
         .shadow(radius: 10)
+    }
+}
+
+//시작하기 버튼
+private struct StartBtnView : View{
+    fileprivate var body: some View{
+        Button(
+            action : {},
+            label :{
+                HStack{
+                    Text("시작하기")
+                        .font(.system(size: 16,weight : .medium))
+                        .foregroundColor(.customBackgroundGreen)
+                    
+                    Image("arrow")
+                        .renderingMode(.template)
+                        .foregroundColor(.green)
+                }
+            }
+        )
+        .padding(.bottom , 50)
     }
 }
 
