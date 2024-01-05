@@ -64,8 +64,8 @@ private struct OnboardingCellListView : View{
         .frame(width: UIScreen.main.bounds.width,height: UIScreen.main.bounds.height / 1.5)
         .background(
         selectedIndex % 2 == 0
-        ? Color.customBackgroundGreen
-        : Color.customBackgroundGreen
+        ? Color.green
+        : Color.white
         
         )
         .clipped()
@@ -82,7 +82,7 @@ private struct OnboardingCellView : View{
     
     fileprivate var body: some View{
         VStack{
-            Image(onboardingContent.imageFileName)
+            Image("Todo")
                 .resizable()
                 .scaledToFit()
             
