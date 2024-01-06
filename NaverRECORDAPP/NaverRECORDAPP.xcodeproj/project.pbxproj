@@ -15,6 +15,11 @@
 		8E3413CE2B4815B600DF394D /* OnboardingContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3413CD2B4815B600DF394D /* OnboardingContent.swift */; };
 		8E3413D02B4815C800DF394D /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3413CF2B4815C800DF394D /* OnboardingViewModel.swift */; };
 		8E3413D22B4815E000DF394D /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3413D12B4815E000DF394D /* OnboardingView.swift */; };
+		8E3413D42B495D6A00DF394D /* PathType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3413D32B495D6A00DF394D /* PathType.swift */; };
+		8E3413D62B495DB200DF394D /* PathModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3413D52B495DB200DF394D /* PathModel.swift */; };
+		8E3413D82B495F6600DF394D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3413D72B495F6600DF394D /* HomeView.swift */; };
+		8E3413DA2B495F6F00DF394D /* TodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3413D92B495F6F00DF394D /* TodoView.swift */; };
+		8E3413DC2B495F7700DF394D /* MemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3413DB2B495F7700DF394D /* MemoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +32,11 @@
 		8E3413CD2B4815B600DF394D /* OnboardingContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContent.swift; sourceTree = "<group>"; };
 		8E3413CF2B4815C800DF394D /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
 		8E3413D12B4815E000DF394D /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		8E3413D32B495D6A00DF394D /* PathType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathType.swift; sourceTree = "<group>"; };
+		8E3413D52B495DB200DF394D /* PathModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathModel.swift; sourceTree = "<group>"; };
+		8E3413D72B495F6600DF394D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		8E3413D92B495F6F00DF394D /* TodoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoView.swift; sourceTree = "<group>"; };
+		8E3413DB2B495F7700DF394D /* MemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +77,11 @@
 				8E3413CD2B4815B600DF394D /* OnboardingContent.swift */,
 				8E3413CF2B4815C800DF394D /* OnboardingViewModel.swift */,
 				8E3413D12B4815E000DF394D /* OnboardingView.swift */,
+				8E3413D32B495D6A00DF394D /* PathType.swift */,
+				8E3413D52B495DB200DF394D /* PathModel.swift */,
+				8E3413D72B495F6600DF394D /* HomeView.swift */,
+				8E3413D92B495F6F00DF394D /* TodoView.swift */,
+				8E3413DB2B495F7700DF394D /* MemoView.swift */,
 			);
 			path = NaverRECORDAPP;
 			sourceTree = "<group>";
@@ -149,12 +164,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E3413D82B495F6600DF394D /* HomeView.swift in Sources */,
+				8E3413D62B495DB200DF394D /* PathModel.swift in Sources */,
+				8E3413DA2B495F6F00DF394D /* TodoView.swift in Sources */,
 				8E3413D02B4815C800DF394D /* OnboardingViewModel.swift in Sources */,
 				8E3413CE2B4815B600DF394D /* OnboardingContent.swift in Sources */,
 				8E3413C02B4811E100DF394D /* ContentView.swift in Sources */,
 				8E3413D22B4815E000DF394D /* OnboardingView.swift in Sources */,
 				8E3413BE2B4811E100DF394D /* NaverRECORDAPPApp.swift in Sources */,
 				8E3413CC2B48132500DF394D /* Color+Extensions.swift in Sources */,
+				8E3413D42B495D6A00DF394D /* PathType.swift in Sources */,
+				8E3413DC2B495F7700DF394D /* MemoView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
