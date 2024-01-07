@@ -21,6 +21,8 @@
 		8E3413DA2B495F6F00DF394D /* TodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3413D92B495F6F00DF394D /* TodoView.swift */; };
 		8E3413DC2B495F7700DF394D /* MemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3413DB2B495F7700DF394D /* MemoView.swift */; };
 		8E3413DE2B496BB700DF394D /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3413DD2B496BB700DF394D /* Date+Extensions.swift */; };
+		8E3413E02B4ADDF500DF394D /* CustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3413DF2B4ADDF500DF394D /* CustomNavigationBar.swift */; };
+		8E3413E22B4ADF7400DF394D /* NavigationBtnType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3413E12B4ADF7400DF394D /* NavigationBtnType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,8 @@
 		8E3413D92B495F6F00DF394D /* TodoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoView.swift; sourceTree = "<group>"; };
 		8E3413DB2B495F7700DF394D /* MemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoView.swift; sourceTree = "<group>"; };
 		8E3413DD2B496BB700DF394D /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		8E3413DF2B4ADDF500DF394D /* CustomNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationBar.swift; sourceTree = "<group>"; };
+		8E3413E12B4ADF7400DF394D /* NavigationBtnType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBtnType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +89,8 @@
 				8E3413D92B495F6F00DF394D /* TodoView.swift */,
 				8E3413DB2B495F7700DF394D /* MemoView.swift */,
 				8E3413DD2B496BB700DF394D /* Date+Extensions.swift */,
+				8E3413DF2B4ADDF500DF394D /* CustomNavigationBar.swift */,
+				8E3413E12B4ADF7400DF394D /* NavigationBtnType.swift */,
 			);
 			path = NaverRECORDAPP;
 			sourceTree = "<group>";
@@ -172,6 +178,8 @@
 				8E3413DA2B495F6F00DF394D /* TodoView.swift in Sources */,
 				8E3413D02B4815C800DF394D /* OnboardingViewModel.swift in Sources */,
 				8E3413CE2B4815B600DF394D /* OnboardingContent.swift in Sources */,
+				8E3413E02B4ADDF500DF394D /* CustomNavigationBar.swift in Sources */,
+				8E3413E22B4ADF7400DF394D /* NavigationBtnType.swift in Sources */,
 				8E3413C02B4811E100DF394D /* ContentView.swift in Sources */,
 				8E3413D22B4815E000DF394D /* OnboardingView.swift in Sources */,
 				8E3413BE2B4811E100DF394D /* NaverRECORDAPPApp.swift in Sources */,
