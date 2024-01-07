@@ -20,6 +20,7 @@
 		8E3413D82B495F6600DF394D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3413D72B495F6600DF394D /* HomeView.swift */; };
 		8E3413DA2B495F6F00DF394D /* TodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3413D92B495F6F00DF394D /* TodoView.swift */; };
 		8E3413DC2B495F7700DF394D /* MemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3413DB2B495F7700DF394D /* MemoView.swift */; };
+		8E3413DE2B496BB700DF394D /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3413DD2B496BB700DF394D /* Date+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		8E3413D72B495F6600DF394D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		8E3413D92B495F6F00DF394D /* TodoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoView.swift; sourceTree = "<group>"; };
 		8E3413DB2B495F7700DF394D /* MemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoView.swift; sourceTree = "<group>"; };
+		8E3413DD2B496BB700DF394D /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 				8E3413D72B495F6600DF394D /* HomeView.swift */,
 				8E3413D92B495F6F00DF394D /* TodoView.swift */,
 				8E3413DB2B495F7700DF394D /* MemoView.swift */,
+				8E3413DD2B496BB700DF394D /* Date+Extensions.swift */,
 			);
 			path = NaverRECORDAPP;
 			sourceTree = "<group>";
@@ -173,6 +176,7 @@
 				8E3413D22B4815E000DF394D /* OnboardingView.swift in Sources */,
 				8E3413BE2B4811E100DF394D /* NaverRECORDAPPApp.swift in Sources */,
 				8E3413CC2B48132500DF394D /* Color+Extensions.swift in Sources */,
+				8E3413DE2B496BB700DF394D /* Date+Extensions.swift in Sources */,
 				8E3413D42B495D6A00DF394D /* PathType.swift in Sources */,
 				8E3413DC2B495F7700DF394D /* MemoView.swift in Sources */,
 			);
