@@ -86,8 +86,48 @@ private struct TodoListContentView : View {
         VStack{
             HStack{
                 Text("할일목록")
+                    .font(.system(size: 16,weight: .bold))
+                    .padding(.leading, 20)
+                
+                Spacer()
                 
             }
+            
+            ScrollView(.vertical){
+                VStack(spacing : 0){
+                    Rectangle()
+                        .fill(Color.customGray0)
+                        .frame(height: 1)
+                    
+                    ForEach(todoListViewModel.todos, id: \.self) {
+                        todo in
+                        // Todo 셀뷰 todo 넣어서 뷰호출
+                        
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+
+//todo cell view
+private struct TodoCellView : View {
+    @EnvironmentObject private var todoListViewModel : TodoListViewModel
+    @State private var isRemoveSelected: Bool
+    private var todo : Todo
+    
+    fileprivate init(
+        isRemoveSelected: Bool = false,
+        todo: Todo)
+    {
+        _isRemoveSelected = State(initialValue: isRemoveSelected)
+        self.todo = todo
+    }
+    
+    fileprivate var body: some View{
+        VStack{
+            
         }
     }
 }
