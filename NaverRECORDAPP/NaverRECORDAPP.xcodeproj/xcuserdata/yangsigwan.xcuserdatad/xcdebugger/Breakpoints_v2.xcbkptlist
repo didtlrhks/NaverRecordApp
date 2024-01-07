@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "968E489F-C5D6-48F9-A40F-B5728C4FA94D"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A07293D3-873F-4C9B-B7D5-DBD634668A85"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NaverRECORDAPP/TodoListView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "A07293D3-873F-4C9B-B7D5-DBD634668A85 - 1a0ce248d3ced226"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(SwiftUI._ConditionalContent&lt;NaverRECORDAPP.CustomNavigationBar, &lt;&lt;opaque return type of SwiftUI.View.frame(width: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, height: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, alignment: SwiftUI.Alignment) -&gt; some&gt;&gt;.0&gt;, NaverRECORDAPP.TitleView, NaverRECORDAPP.AnnouncementView)&gt;&gt; in NaverRECORDAPP.TodoListView.body.getter : some"
+                  moduleName = "NaverRECORDAPP"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yangsigwan/Downloads/NAVERRECORD/NaverRECORDAPP/NaverRECORDAPP/TodoListView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "122">
+               </Location>
+               <Location
+                  uuid = "A07293D3-873F-4C9B-B7D5-DBD634668A85 - c89e00e595172b98"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI._ConditionalContent&lt;NaverRECORDAPP.CustomNavigationBar, &lt;&lt;opaque return type of SwiftUI.View.frame(width: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, height: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, alignment: SwiftUI.Alignment) -&gt; some&gt;&gt;.0&gt;, NaverRECORDAPP.TitleView, NaverRECORDAPP.AnnouncementView)&gt; in closure #1 () -&gt; SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(SwiftUI._ConditionalContent&lt;NaverRECORDAPP.CustomNavigationBar, &lt;&lt;opaque return type of SwiftUI.View.frame(width: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, height: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, alignment: SwiftUI.Alignment) -&gt; some&gt;&gt;.0&gt;, NaverRECORDAPP.TitleView, NaverRECORDAPP.AnnouncementView)&gt;&gt; in NaverRECORDAPP.TodoListView.body.getter : some"
+                  moduleName = "NaverRECORDAPP"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yangsigwan/Downloads/NAVERRECORD/NaverRECORDAPP/NaverRECORDAPP/TodoListView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "166">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
