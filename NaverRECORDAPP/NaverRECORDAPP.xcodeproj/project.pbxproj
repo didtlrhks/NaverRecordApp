@@ -26,6 +26,7 @@
 		8E3413E42B4AE3DE00DF394D /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3413E32B4AE3DE00DF394D /* Todo.swift */; };
 		8E3413E62B4AE52800DF394D /* TodoListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3413E52B4AE52800DF394D /* TodoListViewModel.swift */; };
 		8E3413E82B4AE9A700DF394D /* TodoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3413E72B4AE9A700DF394D /* TodoListView.swift */; };
+		8E3413EA2B4BB1BE00DF394D /* TodoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3413E92B4BB1BE00DF394D /* TodoViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		8E3413E32B4AE3DE00DF394D /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
 		8E3413E52B4AE52800DF394D /* TodoListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListViewModel.swift; sourceTree = "<group>"; };
 		8E3413E72B4AE9A700DF394D /* TodoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListView.swift; sourceTree = "<group>"; };
+		8E3413E92B4BB1BE00DF394D /* TodoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +94,6 @@
 				8E3413D32B495D6A00DF394D /* PathType.swift */,
 				8E3413D52B495DB200DF394D /* PathModel.swift */,
 				8E3413D72B495F6600DF394D /* HomeView.swift */,
-				8E3413D92B495F6F00DF394D /* TodoView.swift */,
 				8E3413DB2B495F7700DF394D /* MemoView.swift */,
 				8E3413DD2B496BB700DF394D /* Date+Extensions.swift */,
 				8E3413DF2B4ADDF500DF394D /* CustomNavigationBar.swift */,
@@ -100,6 +101,8 @@
 				8E3413E32B4AE3DE00DF394D /* Todo.swift */,
 				8E3413E52B4AE52800DF394D /* TodoListViewModel.swift */,
 				8E3413E72B4AE9A700DF394D /* TodoListView.swift */,
+				8E3413E92B4BB1BE00DF394D /* TodoViewModel.swift */,
+				8E3413D92B495F6F00DF394D /* TodoView.swift */,
 			);
 			path = NaverRECORDAPP;
 			sourceTree = "<group>";
@@ -182,6 +185,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E3413EA2B4BB1BE00DF394D /* TodoViewModel.swift in Sources */,
 				8E3413D82B495F6600DF394D /* HomeView.swift in Sources */,
 				8E3413D62B495DB200DF394D /* PathModel.swift in Sources */,
 				8E3413DA2B495F6F00DF394D /* TodoView.swift in Sources */,

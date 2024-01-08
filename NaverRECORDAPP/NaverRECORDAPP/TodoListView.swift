@@ -19,13 +19,13 @@ struct TodoListView: View {
             VStack{
                 if !todoListViewModel.todos.isEmpty {
                     CustomNavigationBar(
-                      isDisplayLeftBtn: false,
-                      rightBtnAction: {
-                          todoListViewModel.navigationRightBtnTapped()
-                          
-                      },
-                      rightBtnType: todoListViewModel.navigationBarRightBtnMode
-                      
+                        isDisplayLeftBtn: false,
+                        rightBtnAction: {
+                            todoListViewModel.navigationRightBtnTapped()
+                            
+                        },
+                        rightBtnType: todoListViewModel.navigationBarRightBtnMode
+                        
                     )
                 }else {
                     Spacer()
@@ -33,10 +33,30 @@ struct TodoListView: View {
                 }
                 
                 TitleView()
-                AnnouncementView()
+                    .padding(.top,20)
+                
+                if todoListViewModel.todos.isEmpty{
+                    AnnouncementView()
+                }
+                else {
+                    TodoListContentView()
+                        .padding(.top,20)
+                }
+                
             }
+            WriteTodoBtnView()
+                .padding(.trailing,20)
+                .padding(.bottom,50)
         }
-
+        .alert("To do list \(todoListViewModel.removeTodosCount) 개 삭제하시겠습니까?",
+               isPresented: $todoListViewModel.isDisplayRemoveTodoAlert) {
+            Button("삭제",role: .destructive) {
+                todoListViewModel.removeBtnTapped()
+            }
+            Button("취소", role: .cancel){}
+        }
+    
+    
     }
 }
 
@@ -102,7 +122,7 @@ private struct TodoListContentView : View {
                     ForEach(todoListViewModel.todos, id: \.self) {
                         todo in
                         // Todo 셀뷰 todo 넣어서 뷰호출
-                        
+                        TodoCellView(todo: todo)
                         
                     }
                 }
@@ -126,8 +146,65 @@ private struct TodoCellView : View {
     }
     
     fileprivate var body: some View{
-        VStack{
+        VStack(spacing : 20){
+            HStack{
+                if !todoListViewModel.isEditTodoMode{
+                    Button(
+                        action: {todoListViewModel.selectedBoxTapped(todo)},
+                        label: {todo.selected ? Image("selectedBox") : Image("unselectedBox")}
+                    )
+                }
+                VStack(alignment: .leading, spacing: 5){
+                    Text(todo.title)
+                        .font(.system(size: 16))
+                        .foregroundColor(todo.selected ? .customIconGray : .customBlack)
+                    
+                    Text(todo.convertedDayAndTime)
+                        .font(.system(size: 16))
+                        .foregroundColor(.customIconGray)
+                }
+                
+                Spacer()
+                
+                if todoListViewModel.isEditTodoMode {
+                    Button(
+                        action : {
+                            isRemoveSelected.toggle()
+                            todoListViewModel.todoRemoveSelectedBoxTapped(todo)
+                        },
+                        label: {
+                            isRemoveSelected ? Image("selectedBox") : Image("unSelectedBox")
+                        }
+                    )
+                }
+            }
+            .padding(.horizontal,20)
+            .padding(.top,10)
             
+            Rectangle()
+                .fill(Color.customGray0)
+                .frame(height: 1)
+        }
+    }
+}
+
+// MARk : -TOdo 작성버튼뷰
+
+private struct WriteTodoBtnView : View{
+    @EnvironmentObject private var pathModel : PathModel
+    
+    fileprivate var body: some View {
+        VStack{
+            Spacer()
+            HStack{
+                Spacer()
+                
+                Button(
+                    action: { pathModel.paths.append(.todoView)}
+                    , label: {
+                        Image("writeBtn")
+                    })
+            }
         }
     }
 }
@@ -137,3 +214,6 @@ private struct TodoCellView : View {
         .environmentObject(PathModel())
         .environmentObject(TodoListViewModel())
 }
+
+
+

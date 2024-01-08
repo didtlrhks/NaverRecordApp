@@ -12,12 +12,15 @@ import SwiftUI
 struct OnboardingView: View {
     @StateObject private var onboardingViewModel = OnboardingViewModel()
     @StateObject private var pathModel = PathModel()
+    @StateObject private var todoListViewModel = TodoListViewModel()
     
     var body: some View {
         
        
         NavigationStack(path : $pathModel.paths){
-            OnboardingContentView(onboardingViewModel: onboardingViewModel)
+            //   OnboardingContentView(onboardingViewModel: onboardingViewModel)
+            TodoListView()
+                .environmentObject(todoListViewModel)
                 .navigationDestination(for: PathType.self, destination: {
                     PathType in
                     switch PathType {
