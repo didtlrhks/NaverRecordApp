@@ -30,13 +30,32 @@ struct MemoListView: View {
                     
                 }
                 TitleView()
+                    .padding(.top , 20)
+                if memoListViewModel.memos.isEmpty {
+                    AnnouncementView()
+                } else {
+                    MemoListContentView()
+                        .padding(.top , 20)
+                    
+                }
                 
-                    //안내뷰 혹은 메모리스트 컨텐츠 뷰
+                
+                //안내뷰 혹은 메모리스트 컨텐츠 뷰
                 
                 //메모작성 플로팅 아이콘 버튼뷰
                 
             }
+            WriteMemoBtnView()
+                .padding(.trailing , 20)
+                .padding(.bottom , 50)
         }
+        .alert(
+            "메모 \(memoListViewModel.removeMemoCount)개 삭제하시겠습니까?", isPresented: $memoListViewModel.isDisplayRemoveMemoAlert){
+                Button("삭제", role: .destructive){
+                    memoListViewModel.removeBtnTapped()
+                }
+                Button("취소", role: .cancel) {}
+            }
         }
 }
 
