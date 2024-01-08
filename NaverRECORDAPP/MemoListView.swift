@@ -125,7 +125,7 @@ private struct MemoCellView : View {
         Button(
             action: { 
                 
-                
+                //Todo : Path 관련 메모 구현필요
             }, label: {
                 VStack(spacing : 10){
                     HStack{
@@ -167,6 +167,35 @@ private struct MemoCellView : View {
         )
     }
 }
+
+private struct WriteMemoBtnView : View {
+    @EnvironmentObject private var pathModel : PathModel
+    
+    fileprivate var body: some View {
+        VStack{
+            Spacer()
+            
+            HStack{
+                Spacer()
+                
+                Button(
+                    action: {
+                        
+                        
+                    }, label: {
+                        
+                        
+                        Image("writeBtn")
+                    }
+                )
+            }
+        }
+    }
+    
+}
+
+
+
 
 #Preview {
     MemoListView()
