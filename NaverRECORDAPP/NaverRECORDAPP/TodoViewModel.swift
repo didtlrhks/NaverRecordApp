@@ -13,10 +13,10 @@ class TodoViewModel : ObservableObject {
     @Published var isDisplayCalendar : Bool
     @Published var day : Date
     
-    init(title: String, 
-         time: Date,
-         isDisplayCalendar: Bool,
-         day : Date
+    init(title: String = "",
+         time: Date = Date(),
+         isDisplayCalendar: Bool = false,
+         day : Date = Date()
     )
     {
         self.title = title
