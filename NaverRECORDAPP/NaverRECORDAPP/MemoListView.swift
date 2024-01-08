@@ -144,7 +144,7 @@ private struct MemoCellView : View {
         Button(
             action: { 
                 
-                //Todo : Path 관련 메모 구현필요
+                pathModel.paths.append(.memoView(isCreateMode: false, memo: memo))
             }, label: {
                 VStack(spacing : 10){
                     HStack{
@@ -199,7 +199,7 @@ private struct WriteMemoBtnView : View {
                 
                 Button(
                     action: {
-                        
+                        pathModel.paths.append(.memoView(isCreateMode: true, memo: nil))
                         
                     }, label: {
                         
