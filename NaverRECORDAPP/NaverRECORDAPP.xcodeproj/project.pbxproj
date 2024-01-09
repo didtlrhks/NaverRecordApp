@@ -34,6 +34,7 @@
 		8E3413F42B4D43F800DF394D /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3413F32B4D43F800DF394D /* Double+Extensions.swift */; };
 		8E3413F62B4D447600DF394D /* VoiceRecorderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3413F52B4D447600DF394D /* VoiceRecorderViewModel.swift */; };
 		8E3413F82B4D569400DF394D /* VoiceRecorderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3413F72B4D569400DF394D /* VoiceRecorderView.swift */; };
+		8E3413FA2B4D90AF00DF394D /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3413F92B4D90AF00DF394D /* Timer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +66,7 @@
 		8E3413F32B4D43F800DF394D /* Double+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extensions.swift"; sourceTree = "<group>"; };
 		8E3413F52B4D447600DF394D /* VoiceRecorderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceRecorderViewModel.swift; sourceTree = "<group>"; };
 		8E3413F72B4D569400DF394D /* VoiceRecorderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceRecorderView.swift; sourceTree = "<group>"; };
+		8E3413F92B4D90AF00DF394D /* Timer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 		8E3413B12B4811E100DF394D = {
 			isa = PBXGroup;
 			children = (
+				8E3413F92B4D90AF00DF394D /* Timer.swift */,
 				8E3413BC2B4811E100DF394D /* NaverRECORDAPP */,
 				8E3413BB2B4811E100DF394D /* Products */,
 			);
@@ -223,6 +226,7 @@
 				8E3413C02B4811E100DF394D /* ContentView.swift in Sources */,
 				8E3413D22B4815E000DF394D /* OnboardingView.swift in Sources */,
 				8E3413BE2B4811E100DF394D /* NaverRECORDAPPApp.swift in Sources */,
+				8E3413FA2B4D90AF00DF394D /* Timer.swift in Sources */,
 				8E3413F22B4C03D700DF394D /* MemoViewModel.swift in Sources */,
 				8E3413CC2B48132500DF394D /* Color+Extensions.swift in Sources */,
 				8E3413EE2B4BF1E100DF394D /* MemoListViewModel.swift in Sources */,
