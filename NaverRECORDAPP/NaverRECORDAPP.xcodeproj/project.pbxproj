@@ -33,6 +33,7 @@
 		8E3413F22B4C03D700DF394D /* MemoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3413F12B4C03D700DF394D /* MemoViewModel.swift */; };
 		8E3413F42B4D43F800DF394D /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3413F32B4D43F800DF394D /* Double+Extensions.swift */; };
 		8E3413F62B4D447600DF394D /* VoiceRecorderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3413F52B4D447600DF394D /* VoiceRecorderViewModel.swift */; };
+		8E3413F82B4D569400DF394D /* VoiceRecorderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3413F72B4D569400DF394D /* VoiceRecorderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +64,7 @@
 		8E3413F12B4C03D700DF394D /* MemoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoViewModel.swift; sourceTree = "<group>"; };
 		8E3413F32B4D43F800DF394D /* Double+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extensions.swift"; sourceTree = "<group>"; };
 		8E3413F52B4D447600DF394D /* VoiceRecorderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceRecorderViewModel.swift; sourceTree = "<group>"; };
+		8E3413F72B4D569400DF394D /* VoiceRecorderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceRecorderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 				8E3413DB2B495F7700DF394D /* MemoView.swift */,
 				8E3413F32B4D43F800DF394D /* Double+Extensions.swift */,
 				8E3413F52B4D447600DF394D /* VoiceRecorderViewModel.swift */,
+				8E3413F72B4D569400DF394D /* VoiceRecorderView.swift */,
 			);
 			path = NaverRECORDAPP;
 			sourceTree = "<group>";
@@ -206,6 +209,7 @@
 				8E3413EA2B4BB1BE00DF394D /* TodoViewModel.swift in Sources */,
 				8E3413D82B495F6600DF394D /* HomeView.swift in Sources */,
 				8E3413D62B495DB200DF394D /* PathModel.swift in Sources */,
+				8E3413F82B4D569400DF394D /* VoiceRecorderView.swift in Sources */,
 				8E3413DA2B495F6F00DF394D /* TodoView.swift in Sources */,
 				8E3413D02B4815C800DF394D /* OnboardingViewModel.swift in Sources */,
 				8E3413E42B4AE3DE00DF394D /* Todo.swift in Sources */,
