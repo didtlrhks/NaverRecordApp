@@ -32,6 +32,7 @@
 		8E3413F02B4BF4CB00DF394D /* MemoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3413EF2B4BF4CB00DF394D /* MemoListView.swift */; };
 		8E3413F22B4C03D700DF394D /* MemoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3413F12B4C03D700DF394D /* MemoViewModel.swift */; };
 		8E3413F42B4D43F800DF394D /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3413F32B4D43F800DF394D /* Double+Extensions.swift */; };
+		8E3413F62B4D447600DF394D /* VoiceRecorderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3413F52B4D447600DF394D /* VoiceRecorderViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +62,7 @@
 		8E3413EF2B4BF4CB00DF394D /* MemoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoListView.swift; sourceTree = "<group>"; };
 		8E3413F12B4C03D700DF394D /* MemoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoViewModel.swift; sourceTree = "<group>"; };
 		8E3413F32B4D43F800DF394D /* Double+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extensions.swift"; sourceTree = "<group>"; };
+		8E3413F52B4D447600DF394D /* VoiceRecorderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceRecorderViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 				8E3413F12B4C03D700DF394D /* MemoViewModel.swift */,
 				8E3413DB2B495F7700DF394D /* MemoView.swift */,
 				8E3413F32B4D43F800DF394D /* Double+Extensions.swift */,
+				8E3413F52B4D447600DF394D /* VoiceRecorderViewModel.swift */,
 			);
 			path = NaverRECORDAPP;
 			sourceTree = "<group>";
@@ -223,6 +226,7 @@
 				8E3413F42B4D43F800DF394D /* Double+Extensions.swift in Sources */,
 				8E3413D42B495D6A00DF394D /* PathType.swift in Sources */,
 				8E3413DC2B495F7700DF394D /* MemoView.swift in Sources */,
+				8E3413F62B4D447600DF394D /* VoiceRecorderViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
