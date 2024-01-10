@@ -38,6 +38,7 @@
 		8E3413FC2B4E406600DF394D /* Int-Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3413FB2B4E406600DF394D /* Int-Extensions.swift */; };
 		8E3413FE2B4E418400DF394D /* TimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3413FD2B4E418400DF394D /* TimerViewModel.swift */; };
 		8E3414002B4E453600DF394D /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3413FF2B4E453600DF394D /* TimerView.swift */; };
+		8E3414022B4E5F9600DF394D /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3414012B4E5F9600DF394D /* NotificationService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,6 +74,7 @@
 		8E3413FB2B4E406600DF394D /* Int-Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int-Extensions.swift"; sourceTree = "<group>"; };
 		8E3413FD2B4E418400DF394D /* TimerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewModel.swift; sourceTree = "<group>"; };
 		8E3413FF2B4E453600DF394D /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		8E3414012B4E5F9600DF394D /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +138,7 @@
 				8E3413FB2B4E406600DF394D /* Int-Extensions.swift */,
 				8E3413FD2B4E418400DF394D /* TimerViewModel.swift */,
 				8E3413FF2B4E453600DF394D /* TimerView.swift */,
+				8E3414012B4E5F9600DF394D /* NotificationService.swift */,
 			);
 			path = NaverRECORDAPP;
 			sourceTree = "<group>";
@@ -246,6 +249,7 @@
 				8E3413F42B4D43F800DF394D /* Double+Extensions.swift in Sources */,
 				8E3413D42B495D6A00DF394D /* PathType.swift in Sources */,
 				8E3413DC2B495F7700DF394D /* MemoView.swift in Sources */,
+				8E3414022B4E5F9600DF394D /* NotificationService.swift in Sources */,
 				8E3413F62B4D447600DF394D /* VoiceRecorderViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
