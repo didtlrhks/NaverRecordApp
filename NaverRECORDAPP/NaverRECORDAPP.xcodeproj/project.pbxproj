@@ -34,7 +34,9 @@
 		8E3413F42B4D43F800DF394D /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3413F32B4D43F800DF394D /* Double+Extensions.swift */; };
 		8E3413F62B4D447600DF394D /* VoiceRecorderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3413F52B4D447600DF394D /* VoiceRecorderViewModel.swift */; };
 		8E3413F82B4D569400DF394D /* VoiceRecorderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3413F72B4D569400DF394D /* VoiceRecorderView.swift */; };
-		8E3413FA2B4D90AF00DF394D /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3413F92B4D90AF00DF394D /* Timer.swift */; };
+		8E3413FA2B4D90AF00DF394D /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3413F92B4D90AF00DF394D /* Time.swift */; };
+		8E3413FC2B4E406600DF394D /* Int-Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3413FB2B4E406600DF394D /* Int-Extensions.swift */; };
+		8E3413FE2B4E418400DF394D /* TimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3413FD2B4E418400DF394D /* TimerViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,7 +68,9 @@
 		8E3413F32B4D43F800DF394D /* Double+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extensions.swift"; sourceTree = "<group>"; };
 		8E3413F52B4D447600DF394D /* VoiceRecorderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceRecorderViewModel.swift; sourceTree = "<group>"; };
 		8E3413F72B4D569400DF394D /* VoiceRecorderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceRecorderView.swift; sourceTree = "<group>"; };
-		8E3413F92B4D90AF00DF394D /* Timer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
+		8E3413F92B4D90AF00DF394D /* Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
+		8E3413FB2B4E406600DF394D /* Int-Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int-Extensions.swift"; sourceTree = "<group>"; };
+		8E3413FD2B4E418400DF394D /* TimerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,7 +87,7 @@
 		8E3413B12B4811E100DF394D = {
 			isa = PBXGroup;
 			children = (
-				8E3413F92B4D90AF00DF394D /* Timer.swift */,
+				8E3413F92B4D90AF00DF394D /* Time.swift */,
 				8E3413BC2B4811E100DF394D /* NaverRECORDAPP */,
 				8E3413BB2B4811E100DF394D /* Products */,
 			);
@@ -127,6 +131,8 @@
 				8E3413F32B4D43F800DF394D /* Double+Extensions.swift */,
 				8E3413F52B4D447600DF394D /* VoiceRecorderViewModel.swift */,
 				8E3413F72B4D569400DF394D /* VoiceRecorderView.swift */,
+				8E3413FB2B4E406600DF394D /* Int-Extensions.swift */,
+				8E3413FD2B4E418400DF394D /* TimerViewModel.swift */,
 			);
 			path = NaverRECORDAPP;
 			sourceTree = "<group>";
@@ -209,10 +215,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E3413FE2B4E418400DF394D /* TimerViewModel.swift in Sources */,
 				8E3413EA2B4BB1BE00DF394D /* TodoViewModel.swift in Sources */,
 				8E3413D82B495F6600DF394D /* HomeView.swift in Sources */,
 				8E3413D62B495DB200DF394D /* PathModel.swift in Sources */,
 				8E3413F82B4D569400DF394D /* VoiceRecorderView.swift in Sources */,
+				8E3413FC2B4E406600DF394D /* Int-Extensions.swift in Sources */,
 				8E3413DA2B495F6F00DF394D /* TodoView.swift in Sources */,
 				8E3413D02B4815C800DF394D /* OnboardingViewModel.swift in Sources */,
 				8E3413E42B4AE3DE00DF394D /* Todo.swift in Sources */,
@@ -226,7 +234,7 @@
 				8E3413C02B4811E100DF394D /* ContentView.swift in Sources */,
 				8E3413D22B4815E000DF394D /* OnboardingView.swift in Sources */,
 				8E3413BE2B4811E100DF394D /* NaverRECORDAPPApp.swift in Sources */,
-				8E3413FA2B4D90AF00DF394D /* Timer.swift in Sources */,
+				8E3413FA2B4D90AF00DF394D /* Time.swift in Sources */,
 				8E3413F22B4C03D700DF394D /* MemoViewModel.swift in Sources */,
 				8E3413CC2B48132500DF394D /* Color+Extensions.swift in Sources */,
 				8E3413EE2B4BF1E100DF394D /* MemoListViewModel.swift in Sources */,
