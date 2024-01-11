@@ -43,6 +43,7 @@
 		8E3414062B4FB45600DF394D /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3414052B4FB45600DF394D /* SettingView.swift */; };
 		8E3414082B4FBCE100DF394D /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3414072B4FBCE100DF394D /* Tab.swift */; };
 		8E34140A2B4FBD3B00DF394D /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3414092B4FBD3B00DF394D /* HomeViewModel.swift */; };
+		8EDA8CAD2B5003A200705C9F /* WriteBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDA8CAC2B5003A200705C9F /* WriteBtn.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -83,6 +84,7 @@
 		8E3414052B4FB45600DF394D /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		8E3414072B4FBCE100DF394D /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
 		8E3414092B4FBD3B00DF394D /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		8EDA8CAC2B5003A200705C9F /* WriteBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteBtn.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +153,7 @@
 				8E3414032B4FA87800DF394D /* AppDelegate.swift */,
 				8E3414052B4FB45600DF394D /* SettingView.swift */,
 				8E3414072B4FBCE100DF394D /* Tab.swift */,
+				8EDA8CAC2B5003A200705C9F /* WriteBtn.swift */,
 			);
 			path = NaverRECORDAPP;
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 				8E3414002B4E453600DF394D /* TimerView.swift in Sources */,
 				8E3414082B4FBCE100DF394D /* Tab.swift in Sources */,
 				8E3413F42B4D43F800DF394D /* Double+Extensions.swift in Sources */,
+				8EDA8CAD2B5003A200705C9F /* WriteBtn.swift in Sources */,
 				8E3413D42B495D6A00DF394D /* PathType.swift in Sources */,
 				8E3413DC2B495F7700DF394D /* MemoView.swift in Sources */,
 				8E3414022B4E5F9600DF394D /* NotificationService.swift in Sources */,
