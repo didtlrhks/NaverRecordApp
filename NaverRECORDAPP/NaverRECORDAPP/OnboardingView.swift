@@ -15,16 +15,14 @@ struct OnboardingView: View {
     @StateObject private var todoListViewModel = TodoListViewModel()
     @StateObject private var memoListViewModel = MemoListViewModel()
     
+    
     var body: some View {
         
        
         NavigationStack(path : $pathModel.paths){
-            //   OnboardingContentView(onboardingViewModel: onboardingViewModel)
-          // MemoListView()
-           // VoiceRecorderView()
-          //  TimerView()
-              //  .environmentObject(memoListViewModel)
-            SettingView()
+              OnboardingContentView(onboardingViewModel: onboardingViewModel)
+         
+          
               
                 .navigationDestination(for: PathType.self, destination: {
                     PathType in
@@ -32,7 +30,8 @@ struct OnboardingView: View {
                     case .homeView :
                         HomeView()
                             .navigationBarBackButtonHidden()
-                        
+                            .environmentObject(todoListViewModel)
+                            .environmentObject(memoListViewModel)
                         
                     case.todoView :
                         TodoView()

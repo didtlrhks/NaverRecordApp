@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct SettingView: View {
+    @EnvironmentObject private var homeViewModel : HomeViewModel
     var body: some View {
      //타이틀뷰
         VStack{
@@ -51,17 +52,18 @@ private struct TitleView : View
 }
 
 private struct TotalTabCountView: View {
+    @EnvironmentObject private var homeViewModel : HomeViewModel
     fileprivate var body: some View{
         
         HStack{
             Spacer()
-            TabCountView(title: "To do", count:0 )
+            TabCountView(title: "To do", count:homeViewModel.todosCount )
             Spacer()
                 .frame(width: 70)
-            TabCountView(title: "메모", count:1 )
+            TabCountView(title: "메모", count:homeViewModel.memosCount )
             Spacer()
                 .frame(width: 70)
-            TabCountView(title: "음성메모", count:3 )
+            TabCountView(title: "음성메모", count:homeViewModel.voiceRecordersCount )
             Spacer()
         }
     }
@@ -92,6 +94,7 @@ private struct TabCountView : View {
 }
 
 private struct TotalTabMoveView: View {
+    @EnvironmentObject private var homeViewModel : HomeViewModel
     fileprivate var body: some View {
         VStack{
             Rectangle()
@@ -100,22 +103,23 @@ private struct TotalTabMoveView: View {
             
             TabMoveView(title: "To do List",
                         tabAction: {
-                
+                homeViewModel.changeSelectedTab(.todoList)
             }
             )
             TabMoveView(title: "메모장",
                         tabAction: {
-                
+                homeViewModel.changeSelectedTab(.memo)
             }
             )
             TabMoveView(title: "음성메모",
                         tabAction: {
-                
+                homeViewModel.changeSelectedTab(.voiceRecorder)
             }
             )
             TabMoveView(title: "타이머",
                         tabAction: {
-                
+                homeViewModel.changeSelectedTab(.timer
+                )
             }
             )
             Rectangle()
@@ -160,4 +164,5 @@ private struct TabMoveView : View {
 
 #Preview {
     SettingView()
+        .environmentObject(HomeViewModel())
 }
