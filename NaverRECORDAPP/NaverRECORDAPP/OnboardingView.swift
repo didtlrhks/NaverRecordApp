@@ -20,10 +20,11 @@ struct OnboardingView: View {
        
         NavigationStack(path : $pathModel.paths){
             //   OnboardingContentView(onboardingViewModel: onboardingViewModel)
-           MemoListView()
+          // MemoListView()
            // VoiceRecorderView()
           //  TimerView()
               //  .environmentObject(memoListViewModel)
+            SettingView()
               
                 .navigationDestination(for: PathType.self, destination: {
                     PathType in

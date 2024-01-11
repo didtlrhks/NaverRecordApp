@@ -41,6 +41,8 @@
 		8E3414022B4E5F9600DF394D /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3414012B4E5F9600DF394D /* NotificationService.swift */; };
 		8E3414042B4FA87800DF394D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3414032B4FA87800DF394D /* AppDelegate.swift */; };
 		8E3414062B4FB45600DF394D /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3414052B4FB45600DF394D /* SettingView.swift */; };
+		8E3414082B4FBCE100DF394D /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3414072B4FBCE100DF394D /* Tab.swift */; };
+		8E34140A2B4FBD3B00DF394D /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3414092B4FBD3B00DF394D /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -79,6 +81,8 @@
 		8E3414012B4E5F9600DF394D /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 		8E3414032B4FA87800DF394D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8E3414052B4FB45600DF394D /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		8E3414072B4FBCE100DF394D /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
+		8E3414092B4FBD3B00DF394D /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +127,7 @@
 				8E3413D32B495D6A00DF394D /* PathType.swift */,
 				8E3413D52B495DB200DF394D /* PathModel.swift */,
 				8E3413D72B495F6600DF394D /* HomeView.swift */,
+				8E3414092B4FBD3B00DF394D /* HomeViewModel.swift */,
 				8E3413DD2B496BB700DF394D /* Date+Extensions.swift */,
 				8E3413DF2B4ADDF500DF394D /* CustomNavigationBar.swift */,
 				8E3413E12B4ADF7400DF394D /* NavigationBtnType.swift */,
@@ -145,6 +150,7 @@
 				8E3414012B4E5F9600DF394D /* NotificationService.swift */,
 				8E3414032B4FA87800DF394D /* AppDelegate.swift */,
 				8E3414052B4FB45600DF394D /* SettingView.swift */,
+				8E3414072B4FBCE100DF394D /* Tab.swift */,
 			);
 			path = NaverRECORDAPP;
 			sourceTree = "<group>";
@@ -244,6 +250,7 @@
 				8E3413E22B4ADF7400DF394D /* NavigationBtnType.swift in Sources */,
 				8E3413F02B4BF4CB00DF394D /* MemoListView.swift in Sources */,
 				8E3413EC2B4BF15D00DF394D /* Memo.swift in Sources */,
+				8E34140A2B4FBD3B00DF394D /* HomeViewModel.swift in Sources */,
 				8E3413C02B4811E100DF394D /* ContentView.swift in Sources */,
 				8E3413D22B4815E000DF394D /* OnboardingView.swift in Sources */,
 				8E3413BE2B4811E100DF394D /* NaverRECORDAPPApp.swift in Sources */,
@@ -254,6 +261,7 @@
 				8E3413EE2B4BF1E100DF394D /* MemoListViewModel.swift in Sources */,
 				8E3413DE2B496BB700DF394D /* Date+Extensions.swift in Sources */,
 				8E3414002B4E453600DF394D /* TimerView.swift in Sources */,
+				8E3414082B4FBCE100DF394D /* Tab.swift in Sources */,
 				8E3413F42B4D43F800DF394D /* Double+Extensions.swift in Sources */,
 				8E3413D42B495D6A00DF394D /* PathType.swift in Sources */,
 				8E3413DC2B495F7700DF394D /* MemoView.swift in Sources */,

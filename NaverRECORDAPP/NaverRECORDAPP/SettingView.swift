@@ -153,6 +153,7 @@ private struct TabMoveView : View {
                 }
             }
         )
+        .padding(.all,20)
     }
     
 }
