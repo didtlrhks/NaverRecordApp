@@ -39,6 +39,7 @@
 		8E3413FE2B4E418400DF394D /* TimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3413FD2B4E418400DF394D /* TimerViewModel.swift */; };
 		8E3414002B4E453600DF394D /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3413FF2B4E453600DF394D /* TimerView.swift */; };
 		8E3414022B4E5F9600DF394D /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3414012B4E5F9600DF394D /* NotificationService.swift */; };
+		8E3414042B4FA87800DF394D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3414032B4FA87800DF394D /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,6 +76,7 @@
 		8E3413FD2B4E418400DF394D /* TimerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewModel.swift; sourceTree = "<group>"; };
 		8E3413FF2B4E453600DF394D /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		8E3414012B4E5F9600DF394D /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		8E3414032B4FA87800DF394D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +141,7 @@
 				8E3413FD2B4E418400DF394D /* TimerViewModel.swift */,
 				8E3413FF2B4E453600DF394D /* TimerView.swift */,
 				8E3414012B4E5F9600DF394D /* NotificationService.swift */,
+				8E3414032B4FA87800DF394D /* AppDelegate.swift */,
 			);
 			path = NaverRECORDAPP;
 			sourceTree = "<group>";
@@ -243,6 +246,7 @@
 				8E3413FA2B4D90AF00DF394D /* Time.swift in Sources */,
 				8E3413F22B4C03D700DF394D /* MemoViewModel.swift in Sources */,
 				8E3413CC2B48132500DF394D /* Color+Extensions.swift in Sources */,
+				8E3414042B4FA87800DF394D /* AppDelegate.swift in Sources */,
 				8E3413EE2B4BF1E100DF394D /* MemoListViewModel.swift in Sources */,
 				8E3413DE2B496BB700DF394D /* Date+Extensions.swift in Sources */,
 				8E3414002B4E453600DF394D /* TimerView.swift in Sources */,
