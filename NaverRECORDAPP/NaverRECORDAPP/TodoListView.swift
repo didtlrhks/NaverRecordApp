@@ -8,7 +8,7 @@ struct TodoListView: View {
   
   
   var body: some View {
-    ZStack {
+  
       // 투두 셀 리스트
       VStack {
         if !todoListViewModel.todos.isEmpty {
@@ -35,10 +35,10 @@ struct TodoListView: View {
         }
       }
       
-      WriteTodoBtnView()
-        .padding(.trailing, 20)
-        .padding(.bottom, 50)
-    }
+     
+      .writeBtn {
+          pathModel.paths.append(.todoView)
+      }
     .alert(
       "To do list \(todoListViewModel.removeTodosCount)개 삭제하시겠습니까?",
       isPresented: $todoListViewModel.isDisplayRemoveTodoAlert
