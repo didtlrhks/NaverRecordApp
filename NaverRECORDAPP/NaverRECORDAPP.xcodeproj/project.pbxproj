@@ -40,6 +40,7 @@
 		8E3414002B4E453600DF394D /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3413FF2B4E453600DF394D /* TimerView.swift */; };
 		8E3414022B4E5F9600DF394D /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3414012B4E5F9600DF394D /* NotificationService.swift */; };
 		8E3414042B4FA87800DF394D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3414032B4FA87800DF394D /* AppDelegate.swift */; };
+		8E3414062B4FB45600DF394D /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3414052B4FB45600DF394D /* SettingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -77,6 +78,7 @@
 		8E3413FF2B4E453600DF394D /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		8E3414012B4E5F9600DF394D /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 		8E3414032B4FA87800DF394D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8E3414052B4FB45600DF394D /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +144,7 @@
 				8E3413FF2B4E453600DF394D /* TimerView.swift */,
 				8E3414012B4E5F9600DF394D /* NotificationService.swift */,
 				8E3414032B4FA87800DF394D /* AppDelegate.swift */,
+				8E3414052B4FB45600DF394D /* SettingView.swift */,
 			);
 			path = NaverRECORDAPP;
 			sourceTree = "<group>";
@@ -229,6 +232,7 @@
 				8E3413D82B495F6600DF394D /* HomeView.swift in Sources */,
 				8E3413D62B495DB200DF394D /* PathModel.swift in Sources */,
 				8E3413F82B4D569400DF394D /* VoiceRecorderView.swift in Sources */,
+				8E3414062B4FB45600DF394D /* SettingView.swift in Sources */,
 				8E3413FC2B4E406600DF394D /* Int-Extensions.swift in Sources */,
 				8E3413DA2B495F6F00DF394D /* TodoView.swift in Sources */,
 				8E3413D02B4815C800DF394D /* OnboardingViewModel.swift in Sources */,
