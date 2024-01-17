@@ -101,7 +101,6 @@
 		8E3413B12B4811E100DF394D = {
 			isa = PBXGroup;
 			children = (
-				8E3413F92B4D90AF00DF394D /* Time.swift */,
 				8E3413BC2B4811E100DF394D /* NaverRECORDAPP */,
 				8E3413BB2B4811E100DF394D /* Products */,
 			);
@@ -162,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				8E3413C42B4811E400DF394D /* Preview Assets.xcassets */,
+				8E3413F92B4D90AF00DF394D /* Time.swift */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
