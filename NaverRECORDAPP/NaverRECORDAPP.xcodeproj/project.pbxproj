@@ -119,9 +119,10 @@
 			children = (
 				8E3413BD2B4811E100DF394D /* NaverRECORDAPPApp.swift */,
 				8E3413BF2B4811E100DF394D /* ContentView.swift */,
+				8E3413F92B4D90AF00DF394D /* Time.swift */,
+				8E3413CB2B48132500DF394D /* Color+Extensions.swift */,
 				8E3413C12B4811E400DF394D /* Assets.xcassets */,
 				8E3413C32B4811E400DF394D /* Preview Content */,
-				8E3413CB2B48132500DF394D /* Color+Extensions.swift */,
 				8E3413CD2B4815B600DF394D /* OnboardingContent.swift */,
 				8E3413CF2B4815C800DF394D /* OnboardingViewModel.swift */,
 				8E3413D12B4815E000DF394D /* OnboardingView.swift */,
@@ -161,7 +162,6 @@
 			isa = PBXGroup;
 			children = (
 				8E3413C42B4811E400DF394D /* Preview Assets.xcassets */,
-				8E3413F92B4D90AF00DF394D /* Time.swift */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
