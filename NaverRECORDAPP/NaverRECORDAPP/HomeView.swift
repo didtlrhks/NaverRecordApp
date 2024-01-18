@@ -68,25 +68,26 @@ struct HomeView: View {
           }
           .tag(Tab.setting)
       }
-      .environmentObject(homeViewModel) // 
+      .environmentObject(homeViewModel) // 일단 이녀석이 어떤 하위뷰들에게 homeViewModel 에 대한 데이터에 접근을 할수있게해주는건데 내가 궁금한건왜 마지막 TabView 에 마지막 괄호에 이런 녀석이 찍혀있는지 궁금했는데 이렇게 하면 TabView 사이에있는 모든 뷰들의 하위에 homeModel 에대한 접근이 가능해지기때문에 이렇게 해논거라고 이해하게 됨
       
-      SeperatorLineView()
+        SeperatorLineView()// 뷰올려놓기
     }
   }
 }
 
 // MARK: - 구분선
-private struct SeperatorLineView: View {
-  fileprivate var body: some View {
-    VStack {
-      Spacer()
+private struct SeperatorLineView: View { // private 를 사용해서 이 구조체로써 내가 이파일안에서만 접근가능함을 알림
+    
+  fileprivate var body: some View { // fileprivate 를 하는 이유는 이소스안에서만 접근하려는 프로퍼티에 접근하는거임
+      VStack { // 새로 스택임
+      Spacer()//거리를 주는거임 이런건 프레임으로 구분해줄수도있음
       
-      Rectangle()
-        .fill(
-          LinearGradient(
-            gradient: Gradient(colors: [Color.white, Color.gray.opacity(0.1)]),
-            startPoint: .top,
-            endPoint: .bottom
+      Rectangle() // 사각형을 넣어주는거임
+        .fill(// 사각형의 내부의 색상을 채워주는역할을 하는거임
+          LinearGradient( // 색상의 순차적으로 변하는 역할을 이해시켜줌
+            gradient: Gradient(colors: [Color.white, Color.gray.opacity(0.1)]), // 화이트에
+            startPoint: .top,// 시작점
+            endPoint: .bottom// 마무리점
           )
         )
         .frame(height: 10)
@@ -101,5 +102,6 @@ struct HomeView_Previews: PreviewProvider {
       .environmentObject(PathModel())
       .environmentObject(TodoListViewModel())
       .environmentObject(MemoListViewModel())
+      //이녀석들은 홈뷰와 그 하위뷰들에서 사용할수있다는 데이터등 혹은 인스턴스들을 가져올수있도록 지정해주는것임
   }
 }
