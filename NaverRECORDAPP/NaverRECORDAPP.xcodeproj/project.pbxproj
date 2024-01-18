@@ -130,6 +130,7 @@
 				8E3413D52B495DB200DF394D /* PathModel.swift */,
 				8E3413D72B495F6600DF394D /* HomeView.swift */,
 				8E3414092B4FBD3B00DF394D /* HomeViewModel.swift */,
+				8E3414072B4FBCE100DF394D /* Tab.swift */,
 				8E3413DD2B496BB700DF394D /* Date+Extensions.swift */,
 				8E3413DF2B4ADDF500DF394D /* CustomNavigationBar.swift */,
 				8E3413E12B4ADF7400DF394D /* NavigationBtnType.swift */,
@@ -152,7 +153,6 @@
 				8E3414012B4E5F9600DF394D /* NotificationService.swift */,
 				8E3414032B4FA87800DF394D /* AppDelegate.swift */,
 				8E3414052B4FB45600DF394D /* SettingView.swift */,
-				8E3414072B4FBCE100DF394D /* Tab.swift */,
 				8EDA8CAC2B5003A200705C9F /* WriteBtn.swift */,
 			);
 			path = NaverRECORDAPP;
