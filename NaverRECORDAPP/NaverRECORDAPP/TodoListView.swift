@@ -59,9 +59,9 @@ struct TodoListView: View {
 
 // MARK: - TodoList 타이틀 뷰
 private struct TitleView: View {
-  @EnvironmentObject private var todoListViewModel: TodoListViewModel
+  @EnvironmentObject private var todoListViewModel: TodoListViewModel// 이뷰에서 활용할 데이터셋을 지정 전역변수느낌
   
-  fileprivate var body: some View {
+  fileprivate var body: some View { // 이파일안에서만 사용가능한 private 선언
     HStack {
       if todoListViewModel.todos.isEmpty {
         Text("To do list를\n추가해 보세요.")
@@ -74,7 +74,7 @@ private struct TitleView: View {
     .font(.system(size: 30, weight: .bold))
     .padding(.leading, 20)
   }
-}
+} // 이 뷰같은경우는 모두 다루긴했던 내용들 이제 슬슬 많이 없다 ㅋㅋ
 
 // MARK: - TodoList 안내 뷰
 private struct AnnouncementView: View {
@@ -83,7 +83,7 @@ private struct AnnouncementView: View {
       Spacer()
       
       Image("pencil")
-        .renderingMode(.template)
+        .renderingMode(.template) // 이거는 렌더링 템플릿모드인데 이게 투명성을 바탕으로 색의 대비를 나타내주는거같음
       Text("\"매일 아침 5시 운동하자!\"")
       Text("\"내일 8시 수강 신청하자!\"")
       Text("\"1시 반 점심약속 리마인드 해보자!\"")
@@ -117,6 +117,8 @@ private struct TodoListContentView: View {
           
           ForEach(todoListViewModel.todos, id: \.self) { todo in
             TodoCellView(todo: todo)
+              
+              // 너무쉽고 사실 그냥 뷰단임 약간 생각할거라고는 ForEach dㅔ서 id 부분을 self 로 ㄱ지정한다 정도 TodoCellView 로 돌리는 느낌이겠지
           }
         }
       }
