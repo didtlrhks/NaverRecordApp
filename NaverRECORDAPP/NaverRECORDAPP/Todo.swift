@@ -8,7 +8,7 @@
 import Foundation
 
 
-struct Todo : Hashable { // 해시어블프로토콜을 한 이유에 대해서는 저번에 도말을 하긴했는데 혼자하라고하면 좀 애매할거같긴하다 이런 데이터형식들을 테이블 셀형태로 잘 만들어야해서 이걸 선택하는거긴함
+struct Todo : Hashable { // 해시어블프로토콜을 한 이유에 대해서는 저번에도 말을 하긴했는데 혼자하라고하면 좀 애매할거같긴하다 이런 데이터형식들을 테이블 셀형태로 잘 만들어야해서 이걸 선택하는거긴함
     
     var title : String
     var time : Date
