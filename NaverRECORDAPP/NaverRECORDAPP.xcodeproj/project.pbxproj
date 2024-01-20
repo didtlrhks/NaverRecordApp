@@ -137,6 +137,7 @@
 				8E3413E32B4AE3DE00DF394D /* Todo.swift */,
 				8E3413E52B4AE52800DF394D /* TodoListViewModel.swift */,
 				8E3413E72B4AE9A700DF394D /* TodoListView.swift */,
+				8EDA8CAC2B5003A200705C9F /* WriteBtn.swift */,
 				8E3413E92B4BB1BE00DF394D /* TodoViewModel.swift */,
 				8E3413D92B495F6F00DF394D /* TodoView.swift */,
 				8E3413ED2B4BF1E100DF394D /* MemoListViewModel.swift */,
@@ -153,7 +154,6 @@
 				8E3414012B4E5F9600DF394D /* NotificationService.swift */,
 				8E3414032B4FA87800DF394D /* AppDelegate.swift */,
 				8E3414052B4FB45600DF394D /* SettingView.swift */,
-				8EDA8CAC2B5003A200705C9F /* WriteBtn.swift */,
 			);
 			path = NaverRECORDAPP;
 			sourceTree = "<group>";

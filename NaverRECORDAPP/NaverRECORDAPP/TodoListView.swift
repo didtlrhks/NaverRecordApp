@@ -2,24 +2,24 @@
 import SwiftUI
 
 struct TodoListView: View {
-  @EnvironmentObject private var pathModel: PathModel
+  @EnvironmentObject private var pathModel: PathModel//인바이러먼트옵젝트를 사용해서 전역처럼 사용하려고 호출을 해주는거임
   @EnvironmentObject private var todoListViewModel: TodoListViewModel
     @EnvironmentObject private var homeViewModel : HomeViewModel
   
   
-  var body: some View {
+  var body: some View { // 바디 부분
   
       // 투두 셀 리스트
       VStack {
-        if !todoListViewModel.todos.isEmpty {
-          CustomNavigationBar(
+        if !todoListViewModel.todos.isEmpty { // 투두리스트뷰모델에 투두가 비지않았을때 즉 투두가없으면 비어있자나 그러니까 넣는거임
+          CustomNavigationBar( // 내가 커스텀한 네비게이션의 바에서 내가 어떤 걸 가져올지를 정하는거임
             isDisplayLeftBtn: false,
             rightBtnAction: {
               todoListViewModel.navigationRightBtnTapped()
             },
-            rightBtnType: todoListViewModel.navigationBarRightBtnMode
+            rightBtnType: todoListViewModel.navigationBarRightBtnMode // 내가 만들어놓은 버튼들의 상태를 조건에 맞춰 지정해주는거임
           )
-        } else {
+        } else { //그거에나리면 투두리스트가 비었을대니까 이럴땐 투두가없을거아냐 그러니까 공백을 만들어주는거지 어차피 이부분을 쓸일이없으니까
           Spacer()
             .frame(height: 30)
         }
@@ -31,27 +31,27 @@ struct TodoListView: View {
           AnnouncementView()
         } else {
           TodoListContentView()
-            .padding(.top, 20)
+            .padding(.top, 20) // 이제 이정도는 가볍다 접근해서 빈경우랑 안빈경우 구분해서 해줌
         }
       }
       
      
-      .writeBtn {
-          pathModel.paths.append(.todoView)
+      .writeBtn {//클로저로 만든함수 해당파일에서 자세한 설명을 달자
+          pathModel.paths.append(.todoView) // 음 이부분에서는 투두뷰로 가는 부분을 append 로 부여서 구현을 해놓은거지
       }
     .alert(
       "To do list \(todoListViewModel.removeTodosCount)개 삭제하시겠습니까?",
-      isPresented: $todoListViewModel.isDisplayRemoveTodoAlert
+      isPresented: $todoListViewModel.isDisplayRemoveTodoAlert // isPresented로 화면에 보이는걸 지정해주는거고
     ) {
-      Button("삭제", role: .destructive) {
+      Button("삭제", role: .destructive) { // 이녀석들이 그에 따른 조건들임
         todoListViewModel.removeBtnTapped()
       }
       Button("취소", role: .cancel) { }
     }
-    .onChange(
-      of: todoListViewModel.todos,
+    .onChange(//온체인지는 내가 관찰하는 녀석과 그녀석이 바뀌었을때 어떤 액션을 할것인가를 지정해주는녀석임
+      of: todoListViewModel.todos, // 얘가 관찰하는 녀석임 얘가 이제 변할때마다 밑에 클로저를 호출할거임
       perform: { todos in
-          homeViewModel.setTodosCount(todos.count)
+          homeViewModel.setTodosCount(todos.count) // 이클로저는 함수 외부에서 어떻게 값을 변화시키는지를 알려주고 그에대한 행동을 진행함
       }
     )
   }
