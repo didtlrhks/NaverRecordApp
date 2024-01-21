@@ -1,18 +1,18 @@
 import SwiftUI
 
 struct TodoView: View {
-  @EnvironmentObject private var pathModel: PathModel
+  @EnvironmentObject private var pathModel: PathModel // 패쓰모델을 인바이런먼트 옵젝트로 선언은 해주는데 private 네? 이는 캡슐화를 강화하기 위해서 하는거임 딱히 상관없음 그냥 Todd 안에서만 사용하면서 EnvironmentObject 이걸로 viewmodelㄹ의 데이터를 불러올수있게 하는거
   @EnvironmentObject private var todoListViewModel: TodoListViewModel
-  @StateObject private var todoViewModel = TodoViewModel()
+  @StateObject private var todoViewModel = TodoViewModel()//이거는 데이터바인딩의 개념이랑 같은데 () 이걸 쓴이유는 () 객체를 생성하는느낌으로 다가가는거지 근데 어차피 같은 데이터 바인딩임 Type 'TodoViewModel.Type' cannot conform to 'ObservableObject' 이런 오류가 남 () 이게 없으면 아마 ObservableObject 이걸 따르니까 새로운 객체를 만들어서 작업하는게 맞다고 되는듯
   
   var body: some View {
     VStack {
       CustomNavigationBar(
-        leftBtnAction: {
-          pathModel.paths.removeLast()
+        leftBtnAction: {// 액션에다가 호출
+          pathModel.paths.removeLast()//패스모델에 패스에 접근해서 removelast로 전거를 지워버림
         },
         rightBtnAction: {
-          todoListViewModel.addTodo(
+          todoListViewModel.addTodo( // addtodo 함수를 호출해서 투두를 만들어주는거얌
             .init(
               title: todoViewModel.title,
               time: todoViewModel.time,
@@ -22,7 +22,7 @@ struct TodoView: View {
           )
           pathModel.paths.removeLast()
         },
-        rightBtnType: .create
+        rightBtnType: .create // create 로 라이트버튼 타입에 액션 도달해주기
       )
       
       TitleView()
@@ -59,14 +59,14 @@ private struct TitleView: View {
 
 // MARK: - 투두 타이틀 뷰 (제목 입력 뷰)
 private struct TodoTitleView: View {
-  @ObservedObject private var todoViewModel: TodoViewModel
+  @ObservedObject private var todoViewModel: TodoViewModel // 이 구조체안에서 사용할 데이터모델 삽임해주고
   
   fileprivate init(todoViewModel: TodoViewModel) {
     self.todoViewModel = todoViewModel
-  }
+  } // 초기화 설정해주기
   
   fileprivate var body: some View {
-    TextField("제목을 입력하세요.", text: $todoViewModel.title)
+    TextField("제목을 입력하세요.", text: $todoViewModel.title) // 데이터 바인딩
   }
 }
 
