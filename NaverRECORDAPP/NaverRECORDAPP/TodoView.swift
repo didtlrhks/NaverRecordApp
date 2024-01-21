@@ -86,11 +86,11 @@ private struct SelectTimeView: View {
       
       DatePicker(
         "",
-        selection: $todoViewModel.time,
-        displayedComponents: [.hourAndMinute]
+        selection: $todoViewModel.time,// 여기서 선택하는것들은 todoViewModel 의 시간을 선택하는거고
+        displayedComponents: [.hourAndMinute] // 시간과 분이 보이게 해준
       )
-      .labelsHidden()
-      .datePickerStyle(WheelDatePickerStyle())
+      .labelsHidden() // 레이블 안보이게하고
+      .datePickerStyle(WheelDatePickerStyle()) // 휠 방식 
       .frame(maxWidth: .infinity, alignment: .center)
       
       Rectangle()
