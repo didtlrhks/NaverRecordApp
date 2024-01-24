@@ -7,7 +7,7 @@
 
 import Foundation
 import SwiftUI
-
+//4. 여기서 이제 뷰를 만들어줌 하위뷰들을 많이 쪼개서 만들어주는게 재사용들의 부분에서 되게 좋다
 
 struct OnboardingView: View {
     @StateObject private var onboardingViewModel = OnboardingViewModel()

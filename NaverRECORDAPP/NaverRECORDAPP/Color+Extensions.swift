@@ -7,7 +7,7 @@
 
 import Foundation
 import SwiftUI
-
+//일단 extension 을 먼저 설정을 해준다. 
 
 extension Color { // 왜 extension 을 썼지? : extension 은 원래있던 클래스나 이넘등의 경우에서 추가로 함수나 메서드등을 추가해줄수있는 녀석이네, 그래서 나는 색깔의 이름들을 새로 초기화해서 내가 쓰기편하게 하려고 이런거를 사용하는구나,
     
