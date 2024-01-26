@@ -3,7 +3,7 @@
 //  NaverRECORDAPP
 //
 //  Created by 양시관 on 1/5/24.
-//
+
 
 import Foundation
 import SwiftUI
@@ -24,14 +24,14 @@ struct OnboardingView: View {
          
           
               
-                .navigationDestination(for: PathType.self, destination: {
+                .navigationDestination(for: PathType.self, destination: { // 여기서 for 부분에서 PathType 부분에서 해당 네비게이션을 정의를 하는부분인거임
                     PathType in
                     switch PathType {
                     case .homeView :
                         HomeView()
                             .navigationBarBackButtonHidden()
-                            .environmentObject(todoListViewModel)
-                            .environmentObject(memoListViewModel)
+                            .environmentObject(todoListViewModel)// 이렇게. environment 를 달아놧다는것은 해당뷰에서도
+                            .environmentObject(memoListViewModel)//안에 들어가있는 녀석을 호출햇 ㅓ사용할수있다는 말을 뜻한다
                         
                     case.todoView :
                         TodoView()
